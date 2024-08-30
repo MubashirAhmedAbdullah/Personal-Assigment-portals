@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image{
+    display: grid;
+    place-items: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #34495e;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* Top bar for portfolio link */
+.portfolio-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 15px 0;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+}
+
+.portfolio-link a {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.portfolio-link a:hover {
+    color: #3498db;
+}
+
+.portfolio-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.dashboard .stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.assignments .assignment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.assignment-item {
+    background-color: #ecf0f1;
+    padding: 25px;
+    border-left: 5px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.assignment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-title {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #34495e;
+    font-weight: 600;
+}
+
+.assignment-due-date {
+    margin-bottom: 15px;
+    color: #95a5a6;
+    font-weight: 500;
+}
+
+.assignment-description {
+    margin-bottom: 20px;
+    color: #7f8c8d;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.assignment-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn {
+    background-color: #333;
+}
+
+.github-btn:hover {
+    background-color: #555;
+}
+
+.hosted-btn {
+    background-color: #2ecc71;
+}
+
+.hosted-btn:hover {
+    background-color: #27ae60;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #34495e;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+}
+
+@media (max-width: 768px) {
+    .dashboard .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .assignment-item {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 425px){
+    .image img{
+        height: 120px;
+    }
+}
